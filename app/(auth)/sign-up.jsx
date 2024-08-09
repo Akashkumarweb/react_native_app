@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { View, Text, ScrollView, Dimensions, Alert, Image } from "react-native";
 
 import { images } from "../../constants";
-// import { createUser } from "../../lib/appwrite";
+import { createUser } from "../../lib/appwrite";
 import { FormField } from "../../components/FormField";
 import { CustomButton} from "../../components/CustomButton";
 // import { useGlobalContext } from "../../context/GlobalProvider";
@@ -19,8 +19,8 @@ const SignUp = () => {
     password: "",
   });
 
-  const submit = async () => {
-
+  const submit = () => {
+    createUser();
   };
 
   return (

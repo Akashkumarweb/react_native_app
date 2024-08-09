@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/logo-small.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.thewebumbrella.rnpa"
     },
     "web": {
       "bundler": "metro",
